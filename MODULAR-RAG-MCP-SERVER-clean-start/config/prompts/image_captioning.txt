@@ -1,0 +1,1 @@
+[Placeholder] Image captioning prompt template — fill in during multimodal stages per DEV_SPEC.

@@ -1,0 +1,1 @@
+[Placeholder] Chunk refinement prompt template — fill in during ingestion transform stages per DEV_SPEC.

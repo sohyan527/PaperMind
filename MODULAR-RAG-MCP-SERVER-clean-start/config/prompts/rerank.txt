@@ -1,0 +1,1 @@
+[Placeholder] LLM rerank prompt template — fill in during retrieval/rerank stages per DEV_SPEC.

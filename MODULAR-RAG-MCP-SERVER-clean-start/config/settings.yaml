@@ -1,0 +1,3 @@
+# 最小可解析配置（A1 骨架；字段校验与加载在 A3 完成）
+project:
+  name: modular-rag-mcp-server
