@@ -1,3 +1,36 @@
-# 最小可解析配置（A1 骨架；字段校验与加载在 A3 完成）
+# 主配置文件：供 A3 读取并做字段必填校验
+# 注意：API Key 可用环境变量占位符（${VAR_NAME}），A3 会做基础 expandvars。
+
 project:
   name: modular-rag-mcp-server
+
+llm:
+  provider: openai
+  model: text
+
+embedding:
+  provider: openai
+  model: text-embedding-3-small
+
+vector_store:
+  backend: chroma
+  persist_path: data/db/chroma
+
+retrieval:
+  sparse_backend: bm25
+  fusion_algorithm: rrf
+  top_k_dense: 20
+  top_k_sparse: 20
+  top_k_final: 10
+
+rerank:
+  backend: none
+
+evaluation:
+  backends: [custom]
+  golden_test_set: ./tests/fixtures/golden_test_set.json
+
+observability:
+  enabled: true
+  log_file: logs/traces.jsonl
+  detail_level: standard

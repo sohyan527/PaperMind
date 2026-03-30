@@ -1,0 +1,1 @@
+Minimal fixture document for ingestion tests (placeholder, DEV_SPEC A2).

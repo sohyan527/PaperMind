@@ -116,9 +116,10 @@ cd Modular-RAG-MCP-Server
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install -e .
+pip install -e ".[dev]"
 python -m compileall src
 python -c "import mcp_server; import core; import ingestion; import libs; import observability"
+pytest -q
 ```
 
 ### 2. 一键配置（Setup Skill）
